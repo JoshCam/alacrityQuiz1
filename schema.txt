@@ -1,0 +1,39 @@
+cars
+    id
+    make
+
+models
+    id
+    model
+
+sales_people
+    id
+    first_name
+    surname
+
+sold_cars:
+    id
+    make_id
+    model_id
+    sales_person_id
+
+
+Who was the 'best' salesman?
+    We would query the sold_cars table, something like:
+    SELECT COUNT(*) FROM sold_cars WHERE sales_person_id = "5";
+
+    And this would return the number of rows in the table that 
+    sales person 5 appears in thus telling us how many cars they've sold
+    you could do this for each sales person - I'm sure there is an SQL 
+    command to find the most common (best sales person) but i don't know it!
+
+
+
+
+
+    What make of car was the most 'successful'?
+    What model was the most 'successful'?
+
+        -> Explain how they would find this out (SQL query if possible, or just describe in words).
+        -> Any thoughts on 'best' / 'successful'?
+
